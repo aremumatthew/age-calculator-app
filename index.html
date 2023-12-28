@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel= "stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,600;1,900&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,600;1,9..144,700;1,9..144,900&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+ 
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="head">Calculate Age</h1>
+    <form class="input-field">
+      <span>
+        <label for="days">DAY</label>
+        <input class="birth-date" type="text" id="days" placeholder="DD" required>
+      </span>
+      <span>
+        <label for="month">MONTH</label>
+        <input class="birth-month" type="text" id="month" placeholder="MM">
+      </span>
+      <span>
+        <label for="year">YEAR</label>
+        <input class="birthYear" type="text" id="year" placeholder="YYYY">
+      </span>
+    </form>
+    <div class="line-btn-div">
+      <hr><div onclick="calcAge()" class="btn-div"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></div>
+    </div>   
+    <div class="result-box">
+      <div class="result-div"><h2 class="years">- -</h2><h1>years</h1></div>
+      <div class="result-div"><h2 class="months">- -</h2><h1>months</h1></div>
+      <div class="result-div"><h2 class="days">- -</h2><h1>days</h1></div>
+    </div>
+  </div> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Matthew Aremu</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
